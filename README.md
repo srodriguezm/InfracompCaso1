@@ -1,3 +1,2 @@
 # InfracompCaso1
-Santiago Rodríguez Matiz
-Andres León
+Santiago Rodríguez Matiz y Andres León
