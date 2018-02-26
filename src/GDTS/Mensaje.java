@@ -3,9 +3,11 @@ package GDTS;
 public class Mensaje 
 {
 	private Integer consulta;
-	
-	public Mensaje()
-	{}
+	private Integer id;
+	public Mensaje(Integer pID)
+	{
+		id=pID;
+	}
 
 	public Integer getConsulta() {
 		return consulta;
