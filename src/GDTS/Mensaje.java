@@ -4,9 +4,10 @@ public class Mensaje
 {
 	private Integer consulta;
 	private Integer id;
-	public Mensaje(Integer pID)
+	public Mensaje(Integer pID, Integer cons)
 	{
 		id=pID;
+		consulta=cons;
 	}
 
 	public Integer getConsulta() {

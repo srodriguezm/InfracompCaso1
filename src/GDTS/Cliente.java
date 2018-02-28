@@ -19,7 +19,9 @@ public class Cliente extends Thread
 		// TODO Auto-generated method stub
 		for (int i = 0; i < numeroDeConsultas; i++) 
 		{
-			Mensaje mensaje=new Mensaje(id);
+			Integer contenido=(int)Math.random();
+			Mensaje mensaje=new Mensaje(id,contenido);
+			buff.dejarMensaje(mensaje);
 		}
 	}
 }
