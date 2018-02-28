@@ -17,5 +17,10 @@ public class Mensaje
 	public void setConsulta(Integer consulta) {
 		this.consulta = consulta;
 	}
+
+	public Integer getID() {
+		// TODO Auto-generated method stub
+		return id;
+	}
 	
 }

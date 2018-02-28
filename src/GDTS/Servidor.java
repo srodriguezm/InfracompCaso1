@@ -11,10 +11,14 @@ public class Servidor extends Thread
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-		boolean fin=false;
+		boolean fin=buff.bufferVacio();
 		while(!fin)
 		{
 			Mensaje m=buff.cogerMensaje();
+			cambiarMensaje(m);
+			cambiarMensaje(m);
+			buff.dejarMensaje(m);
+			notifyAll();
 			fin=buff.bufferVacio();
 		}
 	}

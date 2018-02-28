@@ -19,6 +19,15 @@ public class Buffer {
 		else
 			return null;
 	}
+	public Mensaje getMensajeByid(Integer id) {
+		Mensaje resp=null;
+		for (int i = 0; i < mensajes.size()&&resp==null; i++) {
+			Mensaje temp=mensajes.get(i);
+			if(temp.getID()==id)
+				resp=temp;
+		}
+		return resp;
+	}
 	public boolean bufferVacio() {
 		return mensajes.isEmpty();
 	}
